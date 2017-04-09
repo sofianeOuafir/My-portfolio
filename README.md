@@ -24,3 +24,24 @@
   
   ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/maquette.png)
   
+  <h2> pages d'administration généré par Grails </h2>
+  
+  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/grails-controllers.png)
+  
+  <h2> Exemple d'administration d'un user </h2>
+    
+  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/grails-user.png)
+  
+  <h2> Résultat final du cv </h2>
+    
+  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/cv-1.png)
+  
+  <br/>
+  
+    ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/cv-2.png)
+  
+  
+  
+  
+  
+  
