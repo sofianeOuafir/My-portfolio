@@ -18,6 +18,7 @@
   
   <h2> Schéma du classes du webservice Grails </h2>
   
+  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/uml.png)
   
   
   
