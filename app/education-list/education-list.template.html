@@ -1,0 +1,24 @@
+<div class="educations col-md-12">
+    <div class="educations-icon col-md-2">
+      <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+    </div>
+  <div class="educations-education col-md-10">
+    <div class="col-md-8 educations-education-title">
+      <h1><strong translate>EDUCATION.TITLE</strong></h1>
+    </div>
+    <div class="col-md-4  educations-education-selectpicker">
+      <select class="selectpicker" ng-model="$ctrl.orderProp">
+        <option value="-startdate" translate>EDUCATION.NEWEST</option>
+        <option value="startdate" translate>EDUCATION.OLDEST</option>
+      </select>
+    </div>
+    <div class="col-md-12 educations-education-repeat list-item" ng-repeat="education in $ctrl.educations | orderBy: $ctrl.orderProp">
+      <h2><strong>{{education.title}}</strong><span class="educations-education-place"> <strong>@{{education.place}}</strong></span></h2>
+      <p class="educations-education-date">{{education.startdate | date:'MMM yyyy'}} - {{education.enddate | date:'MMM yyyy'}}</p>
+      <p>
+        {{education.description}}
+      </p>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,27 @@
+<div>
+  <div>
+    <img class="user-photo" src="images/profile.jpg">
+    <p class="user-fullname">{{$ctrl.user.firstname }} {{$ctrl.user.surname}}</p>
+    <p class="user-job-description">{{$ctrl.user.jobDescription}}</p>
+  </div>
+  <div class="user-description">
+    <div class="user-description-icon col-md-2"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
+    <p class="user-description-text col-md-10">{{$ctrl.user.description}}</p>
+  </div>
+  <div class="user-phone">
+    <div class="user-phone-icon col-md-2"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> </div>
+    <p class="user-phone-number col-md-10">{{$ctrl.user.phoneNumber}}</p>
+  </div>
+  <div class="user-email">
+    <div class="user-email-icon col-md-2">
+      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+    </div>
+    <p class="user-email-address col-md-10">{{$ctrl.user.email}}</p>
+  </div>
+  <div class="user-github">
+    <div class="user-github-icon col-md-2">
+      <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+    </div>
+    <p class="user-github-address col-md-10"><a target="_blank" href="{{$ctrl.user.github}}"> Github</a></p>
+  </div>
+</div>

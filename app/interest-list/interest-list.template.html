@@ -1,0 +1,16 @@
+<div class="col-md-12 interests">
+  <div class="interests-icon col-md-2">
+    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+  </div>
+  <div class="interests-interest col-md-10">
+    <h1><strong translate>INTEREST.TITLE</strong></h1>
+    <div ng-repeat="interest in $ctrl.interests">
+      <span class="{{interest.icon}}" data-toggle="tooltip" data-placement="top" title="{{interest.title}}"></span>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function() {
+  $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+  });
+</script>

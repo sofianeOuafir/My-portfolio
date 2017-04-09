@@ -1,0 +1,203 @@
+@font-face
+{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Roboto"), local("Roboto-regular"), url("http://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2") format("woff2");
+}
+
+.container
+{
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+body
+{
+  background-color: #eae8e7;
+  font-size: 10pt;
+  font-family: "Roboto";
+}
+.user
+{
+  padding: 0 !important;
+  background-color: #5da4d9;
+  color: white;
+  box-shadow: 1px 1px 5px #767270;
+}
+
+.user-photo
+{
+  width:100%;
+}
+
+.user-job-description, .user-fullname
+{
+  margin-top:5px;
+  text-align:center;
+}
+
+.user-description-icon, .user-description-text, .user-phone-icon, .user-phone-number, .user-email-icon, .user-email-address, .user-github-icon, .user-github-address
+{
+  display:inline-block;
+}
+
+.right-side-block
+{
+  color:#727670;
+}
+
+.work-experiences, .educations, .interests
+{
+  box-shadow: 1px 1px 2px #767270;
+  background-color:white;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.user-phone-icon, .user-email-icon, .user-github-icon, .skills-icon, .user-description-icon
+{
+  font-size: 15pt;
+}
+.user-phone-number, .user-email-address, .user-github-address, .skills-title, .user-fullname
+{
+  font-size: 15pt;
+}
+
+.skills-skill-title
+{
+  font-size: 12pt;
+}
+
+.user-github-address a
+{
+  color: white;
+  text-decoration: underline;
+}
+
+.user-description-text, .user-phone-number, .user-email-address, .user-github-address
+{
+  padding-bottom: 5px;
+  border-bottom: 1px solid #767270;
+}
+
+.work-experiences-icon, .educations-icon, .interests-icon
+{
+  font-size: 35px;
+  margin-top:17px;
+}
+
+.work-experiences-experience, .educations-education, .interests-interest
+{
+  padding: 0px !important;
+}
+
+.work-experiences-experience-title h1, .educations-education-title h1, .interests-interest h1
+{
+  font-size: 25px;
+}
+
+.work-experiences-experience h2, .educations-education h2
+{
+  font-size: 17px;
+}
+
+.work-experiences-experience-place, .educations-education-place
+{
+  font-size:13px;
+}
+
+.work-experiences-experience-date, .educations-education-date
+{
+  color: #5da4d9;
+}
+
+.work-experiences-experience-repeat, .educations-education-repeat
+{
+   border-bottom: 1px solid #767270;
+}
+
+.interests-interest div
+{
+  margin-right: 20px;
+  display:inline-block;
+  margin-top: 20px;
+  color: #5da4d9;
+}
+
+.interests-interest div span
+{
+  font-size: 40px;
+}
+
+.tooltip-arrow
+{
+  background-color: white !important;
+}
+
+.selectpicker
+{
+    margin-top: 17px;
+}
+
+
+.skills
+{
+padding:0px
+}
+
+.tooltip-inner
+{
+  color: white !important;
+}
+
+.work-experiences-experience-selectpicker,  .work-experiences-experience-repeat, .work-experiences-experience-title, .educations-education-title, .educations-education-selectpicker, .educations-education-repeat
+{
+  padding:0px;
+}
+
+.list-item.ng-enter,
+.list-item.ng-leave,
+.list-item.ng-move {
+  transition: 0.5s linear all;
+}
+
+.list-item.ng-enter,
+.list-item.ng-move {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.list-item.ng-enter.ng-enter-active,
+.list-item.ng-move.ng-move-active {
+  height: 120px;
+  opacity: 1;
+}
+
+.list-item.ng-leave {
+  opacity: 1;
+  overflow: hidden;
+}
+
+.list-item.ng-leave.ng-leave-active {
+  height: 0;
+  opacity: 0;
+ padding-bottom: 0;
+  padding-top: 0;
+}
+
+.flags-container
+{
+  margin-bottom:5px;
+}
+
+.flag-icon
+{
+  box-shadow: 1px 1px 2px #767270;
+  font-size:30px;
+}
+
+.flag-icon-gb
+{
+  margin-right:5px;
+}

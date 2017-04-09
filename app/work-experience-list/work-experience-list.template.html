@@ -1,0 +1,23 @@
+<div class="col-md-12 work-experiences">
+  <div class="work-experiences-icon col-md-2">
+    <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+  </div>
+  <div class="work-experiences-experience col-md-10">
+    <div class="col-md-8 work-experiences-experience-title">
+     <h1><strong translate>WORK.TITLE</strong></h1>
+    </div>
+    <div class="col-md-4 work-experiences-experience-selectpicker">
+      <select class="selectpicker" ng-model="$ctrl.orderProp">
+        <option value="-startdate" translate>WORK.NEWEST</option>
+        <option value="startdate" translate>WORK.OLDEST</option>
+      </select>
+    </div>
+    <div class="col-md-12 work-experiences-experience-repeat list-item"  ng-repeat="workExperience in $ctrl.workExperiences | orderBy:$ctrl.orderProp">
+      <h2><strong>{{workExperience.title}}</strong> <span class="work-experiences-experience-place"><strong>@{{workExperience.place}}</strong></span></h2>
+      <p class="work-experiences-experience-date">{{workExperience.startdate | date:'MMM yyyy'}} - {{workExperience.enddate | date:'MMM yyyy'}}</p>
+      <p>
+        {{workExperience.description}}
+      </p>
+    </div>
+  </div>
+</div>
