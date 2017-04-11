@@ -13,7 +13,7 @@ describe('workExperienceList', function() {
     beforeEach(inject(function($componentController, _$httpBackend_) {
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('http://localhost:8080/cv/workExperience/list?lang=en')
-                  .respond([{"class":"cv.WorkExperience","id":1,"description":"lala","enddate":"2017-04-02T12:13:47Z","place":"la","startdate":"2017-04-02T12:13:47Z","title":"workExperience1","user":{"class":"cv.User","id":1}},{"class":"cv.WorkExperience","id":2,"description":"lala","enddate":"2017-04-02T12:13:47Z","place":"la","startdate":"2017-04-02T12:13:47Z","title":"workExperience2","user":{"class":"cv.User","id":1}}]);
+                  .respond([{'class':'cv.WorkExperience','id':1,'description':'lala','enddate':'2017-04-02T12:13:47Z','place':'la','startdate':'2017-04-02T12:13:47Z','title':'workExperience1','user':{'class':'cv.User','id':1}},{'class':'cv.WorkExperience','id':2,'description':'lala','enddate':'2017-04-02T12:13:47Z','place':'la','startdate':'2017-04-02T12:13:47Z','title':'workExperience2','user':{'class':'cv.User','id':1}}]);
       ctrl = $componentController('workExperienceList');
     }));
 
@@ -25,7 +25,7 @@ describe('workExperienceList', function() {
       expect(ctrl.workExperiences).toBeUndefined();
 
       $httpBackend.flush();
-      expect(ctrl.workExperiences).toEqual([{"class":"cv.WorkExperience","id":1,"description":"lala","enddate":"2017-04-02T12:13:47Z","place":"la","startdate":"2017-04-02T12:13:47Z","title":"workExperience1","user":{"class":"cv.User","id":1}},{"class":"cv.WorkExperience","id":2,"description":"lala","enddate":"2017-04-02T12:13:47Z","place":"la","startdate":"2017-04-02T12:13:47Z","title":"workExperience2","user":{"class":"cv.User","id":1}}]);
+      expect(ctrl.workExperiences).toEqual([{'class':'cv.WorkExperience','id':1,'description':'lala','enddate':'2017-04-02T12:13:47Z','place':'la','startdate':'2017-04-02T12:13:47Z','title':'workExperience1','user':{'class':'cv.User','id':1}},{'class':'cv.WorkExperience','id':2,'description':'lala','enddate':'2017-04-02T12:13:47Z','place':'la','startdate':'2017-04-02T12:13:47Z','title':'workExperience2','user':{'class':'cv.User','id':1}}]);
     });
 
   });

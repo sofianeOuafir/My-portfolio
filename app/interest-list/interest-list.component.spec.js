@@ -10,7 +10,7 @@ describe('interestList', function(){
     beforeEach(inject(function($componentController, _$httpBackend_){
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('http://localhost:8080/cv/interest/list?lang=en')
-                  .respond([{"class":"cv.Interest","id":1,"icon":"qssds","title":"lalalalal","user":{"class":"cv.User","id":1}}]);
+                  .respond([{'class':'cv.Interest','id':1,'icon':'qssds','title':'lalalalal','user':{'class':'cv.User','id':1}}]);
       ctrl = $componentController('interestList');
 
     }));

@@ -21,6 +21,5 @@ angular.module('educationList', ['pascalprecht.translate'])
 
        $translateProvider.translations('en', en)
         .translations('fr', fr);
-
        });
 

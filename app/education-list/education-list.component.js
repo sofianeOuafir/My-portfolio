@@ -1,3 +1,5 @@
+'use strict';
+
 angular.
   module('educationList').
     component('educationList', {
@@ -11,7 +13,7 @@ angular.
       });
 
       $rootScope.$on('$translateChangeSuccess', function () {
-        if($rootScope.lang == 'en')
+        if($rootScope.lang === 'en')
         {
           $http.get('http://localhost:8080/cv/education/list?lang=en').then(function(response){
             self.educations = response.data;

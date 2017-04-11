@@ -40,15 +40,15 @@ module.exports = function (grunt) {
         tasks: ['wiredep']
       },
       js: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
+        files: ['<%= yeoman.app %>/{,*/}*.js'],
         tasks: ['newer:jshint:all', 'newer:jscs:all'],
         options: {
           livereload: '<%= connect.options.livereload %>'
         }
       },
       jsTest: {
-        files: ['test/spec/{,*/}*.js'],
-        tasks: ['newer:jshint:test', 'newer:jscs:test', 'karma']
+        files: ['<%= yeoman.app %>/**/*.spec.js'],
+        tasks: ['karma', 'newer:jshint:test', 'newer:jscs:test' ]
       },
       styles: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
@@ -121,6 +121,7 @@ module.exports = function (grunt) {
     },
 
     // Make sure there are no obvious mistakes
+    //JSHint is a popular JavaScript linter that can help detect low-quality code.
     jshint: {
       options: {
         jshintrc: '.jshintrc',
@@ -129,18 +130,18 @@ module.exports = function (grunt) {
       all: {
         src: [
           'Gruntfile.js',
-          '<%= yeoman.app %>/scripts/{,*/}*.js'
+          '<%= yeoman.app %>/**/{,*/}*.js'
         ]
       },
       test: {
         options: {
-          jshintrc: 'test/.jshintrc'
+          jshintrc: '.jshintrc'
         },
-        src: ['test/spec/{,*/}*.js']
+        src: ['app/**/*.spec.js']
       }
     },
 
-    // Make sure code styles are up to par
+    // JSCS (for JavaScript Code Style checker) to follow the development rules in a team
     jscs: {
       options: {
         config: '.jscsrc',
@@ -149,7 +150,7 @@ module.exports = function (grunt) {
       all: {
         src: [
           'Gruntfile.js',
-          '<%= yeoman.app %>/scripts/{,*/}*.js'
+          '<%= yeoman.app %>/**/*.js'
         ]
       },
       test: {
@@ -345,7 +346,7 @@ module.exports = function (grunt) {
           usemin: 'scripts/scripts.js'
         },
         cwd: '<%= yeoman.app %>',
-        src: 'views/{,*/}*.html',
+        src: '{,*/}*.html',
         dest: '.tmp/templateCache.js'
       }
     },

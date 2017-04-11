@@ -1,13 +1,15 @@
+'use strict';
+
 angular.
   module('professionalSkillList').
     component('professionalSkillList', {
       templateUrl: 'professional-skill-list/professional-skill-list.template.html',
       controller: ['$http', '$translate', '$rootScope', function ProfessionalSkillListController($http, $translate, $rootScope){
         var self = this;
-        self.orderProp = "-achievment";
+        self.orderProp = '-achievment';
         self.color = function(achievment)
         {
-          var color = new Array("success", "warning", "danger");
+          var color = new Array('success', 'warning', 'danger');
           achievment = parseInt(achievment);
           if(achievment < 33)
           {
