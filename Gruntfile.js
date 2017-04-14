@@ -243,7 +243,7 @@ module.exports = function (grunt) {
     useminPrepare: {
       html: '<%= yeoman.app %>/index.html',
       options: {
-        dest: '<%= yeoman.dist %>',
+        dest: 'dist',
         flow: {
           html: {
             steps: {
@@ -286,25 +286,46 @@ module.exports = function (grunt) {
     //     }
     //   }
     // },
-    // uglify: {
-    //   dist: {
-    //     files: {
-    //       '<%= yeoman.dist %>/scripts/scripts.js': [
-    //         '<%= yeoman.dist %>/scripts/scripts.js'
-    //       ]
-    //     }
-    //   }
-    // },
+//     uglify: {
+//       dist: {
+//         files: {
+//           '<%= yeoman.dist %>/scripts/scripts.js': [
+//             '<%= yeoman.dist %>/scripts/scripts.js'
+//           ]
+//         }
+//       }
+//     },
     // concat: {
     //   dist: {}
     // },
+
+//    concat:
+//    { generated:
+//     { files:
+//        [ { dest: '.tmp/concat/styles/main.css',
+//            src: [ 'app/styles/main.css' ] },
+//          { dest: '.tmp/concat/scripts/scripts.js',
+//            src: [ 'app/**/*.component.js', 'app/**.module.js', 'app/scripts/app.js' ] } ] } },
+//
+//    uglify:
+//    { generated:
+//     { files:
+//        [ { dest: 'dist/scripts/scripts.js',
+//            src: [ '.tmp/concat/scripts/scripts.js' ] } ] } },
+//
+//    cssmin:
+//    { generated:
+//     { files:
+//        [ { dest: 'dist/styles/main.css',
+//            src: [ '.tmp/concat/styles/main.css' ] } ] } },
+
 
     imagemin: {
       dist: {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>/images',
-          src: '{,*/}*.{png,jpg,jpeg,gif}',
+          src: '{,}*.{png,jpg,jpeg,gif}',
           dest: '<%= yeoman.dist %>/images'
         }]
       }

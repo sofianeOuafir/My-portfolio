@@ -37,7 +37,7 @@ angular
       };
 
        $translateProvider.translations('en', en)
-        .translations('fr', fr);
+       .translations('fr', fr);
 
     $translateProvider.preferredLanguage('en');
 
