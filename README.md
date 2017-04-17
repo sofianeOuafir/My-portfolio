@@ -2,7 +2,7 @@
   <h1>Projet de Techno - mobiles</h1>
   <p> <strong> Technologies utilisées : </strong> </p>
   <ul>
-  <li> <span style="color:red">Framework backend - webservice </span> : Grails </li>
+  <li> <a href="https://github.com/sofianeOuafir/cv-admin"> <span style="color:red">Framework backend - webservice </span> : Grails </a> </li>
   <li> <span style="color:red">Framework Frontend </span> : Angular Js </li>
   <li> <span style="color:red"> Traduction </span> : Angular-translate </li> 
   <li> <span style="color:red"> Autres librairies </span> : Bootstrap, Jquery, flag-icon </li> 
