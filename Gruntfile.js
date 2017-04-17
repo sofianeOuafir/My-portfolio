@@ -277,24 +277,24 @@ module.exports = function (grunt) {
     // By default, your `index.html`'s <!-- Usemin block --> will take care of
     // minification. These next options are pre-configured if you do not wish
     // to use the Usemin blocks.
-    // cssmin: {
-    //   dist: {
-    //     files: {
-    //       '<%= yeoman.dist %>/styles/main.css': [
-    //         '.tmp/styles/{,*/}*.css'
-    //       ]
-    //     }
-    //   }
-    // },
-//     uglify: {
+//     cssmin: {
 //       dist: {
 //         files: {
-//           '<%= yeoman.dist %>/scripts/scripts.js': [
-//             '<%= yeoman.dist %>/scripts/scripts.js'
+//           '<%= yeoman.dist %>/styles/main.css': [
+//             '.tmp/styles/{,*/}*.css'
 //           ]
 //         }
 //       }
 //     },
+     uglify: {
+       dist: {
+         files: {
+           '<%= yeoman.dist %>/scripts/scripts.js': [
+             '.tmp/concat/scripts/scripts.js'
+           ]
+         }
+       }
+     },
     // concat: {
     //   dist: {}
     // },
@@ -335,9 +335,9 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/images',
+          cwd: 'bower_components/flag-icon-css/flags/4x3',
           src: '{,*/}*.svg',
-          dest: '<%= yeoman.dist %>/images'
+          dest: '<%= yeoman.dist %>/flags/4x3'
         }]
       }
     },
@@ -483,18 +483,19 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
+        'copy:dist',
     'useminPrepare',
     'concurrent:dist',
     'postcss',
     'ngtemplates',
     'concat',
     'ngAnnotate',
-    'copy:dist',
+
     'cdnify',
     'cssmin',
-    'uglify',
     'filerev',
     'usemin',
+    'uglify',
     'htmlmin'
   ]);
 
