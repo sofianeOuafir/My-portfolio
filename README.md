@@ -18,27 +18,27 @@
   
   <h2> Schéma de classe du webservice Grails </h2>
   
-  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/uml.png)
+  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/uml.png?raw=true)
   
   <h2> Maquette réalisé au début du projet </h2>
   
-  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/maquette.png)
+  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/maquette.png?raw=true)
   
   <h2> pages d'administration généré par Grails </h2>
   
-  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/grails-controllers.png)
+  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/grails-controllers.png?raw=true)
   
   <h2> Exemple d'administration d'un user </h2>
     
-  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/grails-user.png)
+  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/grails-user.png?raw=true)
   
   <h2> Résultat final du cv </h2>
     
-  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/cv-1.png)
+  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/cv-1.png?raw=true)
   
   <br/>
   
-  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/cv-2.png)
+  ![alt tag](https://github.com/sofianeOuafir/cv/blob/master/app/images/cv-2.png?raw=true)
   
   
   
