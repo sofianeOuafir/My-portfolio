@@ -3,11 +3,11 @@
   <p> <strong> Technologies utilisées : </strong> </p>
   <ul>
   <li> <a href="https://github.com/sofianeOuafir/cv-admin"> <span style="color:red">Framework backend - webservice </span> : Grails </a> </li>
-  <li> <span style="color:red">Framework Frontend </span> : Angular Js </li>
-  <li> <span style="color:red"> Traduction </span> : Angular-translate </li> 
-  <li> <span style="color:red"> Autres librairies </span> : Bootstrap, Jquery, flag-icon </li> 
-  <li> <span style="color:red"> Test unitaires </span> : Jasmine - karma - Jenkins</li>    
-  <li> <span style="color:red"> Task runner </span> : Grunt </li> 
+  <li> <span>Framework Frontend </span> : Angular Js </li>
+  <li> <span> Traduction </span> : Angular-translate </li> 
+  <li> <span> Autres librairies </span> : Bootstrap, Jquery, flag-icon </li> 
+  <li> <span> Test unitaires </span> : Jasmine - karma - Jenkins</li>    
+  <li> <span> Task runner </span> : Grunt </li> 
   <li> Autres outils : Google analytics </li>
   </ul>
   
