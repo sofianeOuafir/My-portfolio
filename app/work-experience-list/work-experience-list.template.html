@@ -13,7 +13,7 @@
       </select>
     </div>
     <div class="col-md-12 work-experiences-experience-repeat list-item"  ng-repeat="workExperience in $ctrl.workExperiences | orderBy:$ctrl.orderProp">
-      <h2><strong>{{workExperience.title}}</strong> <span class="work-experiences-experience-place"><strong>@{{workExperience.place}}</strong></span></h2>
+      <h2><a href="{{workExperience.website}}" target="_blank" class="link"><strong>{{workExperience.title}}</strong></a> <span class="work-experiences-experience-place"><strong>@{{workExperience.place}}</strong></span></h2>
       <p class="work-experiences-experience-date">{{workExperience.startdate | date:'MMM yyyy'}} - {{workExperience.enddate | date:'MMM yyyy'}}</p>
       <p>
         {{workExperience.description}}

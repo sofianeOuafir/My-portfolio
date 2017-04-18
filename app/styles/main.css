@@ -101,6 +101,11 @@ body
   font-size: 17px;
 }
 
+.work-experiences-experience-repeat .link
+{
+  color: #727670;
+}
+
 .work-experiences-experience-place, .educations-education-place
 {
   font-size:13px;
