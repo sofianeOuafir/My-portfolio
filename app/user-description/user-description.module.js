@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('userDescription', []);
+angular.module('userDescription', ['pascalprecht.translate']);
