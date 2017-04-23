@@ -9,7 +9,7 @@ describe('professionalSkillList', function(){
 
     beforeEach(inject(function($componentController, _$httpBackend_){
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('http://localhost:8080/admin-cv/professionalSkill/list?lang=en')
+      $httpBackend.expectGET('http://68.66.240.35/admin-cv/professionalSkill/list?lang=en')
                   .respond('[{"class":"cv.ProfessionalSkill","id":2,"achievment":70,"title":"AngularJS","user":{"class":"cv.User","id":1}},{"class":"cv.ProfessionalSkill","id":1,"achievment":60,"title":"Grails","user":{"class":"cv.User","id":1}}]');
        ctrl = $componentController('professionalSkillList');
     }));

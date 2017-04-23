@@ -8,20 +8,20 @@ angular.
       var self = this;
       self.orderProp = '-startdate';
 
-      $http.get('http://localhost:8080/admin-cv/education/list?lang=en').then(function(response){
+      $http.get('http://68.66.240.35/admin-cv/education/list?lang=en').then(function(response){
         self.educations = response.data;
       });
 
       $rootScope.$on('$translateChangeSuccess', function () {
         if($rootScope.lang === 'en')
         {
-          $http.get('http://localhost:8080/admin-cv/education/list?lang=en').then(function(response){
+          $http.get('http://68.66.240.35/admin-cv/education/list?lang=en').then(function(response){
             self.educations = response.data;
           });
         }
         else
         {
-          $http.get('http://localhost:8080/admin-cv/education/list?lang=fr').then(function(response){
+          $http.get('http://68.66.240.35/admin-cv/education/list?lang=fr').then(function(response){
             self.educations = response.data;
           });
         }

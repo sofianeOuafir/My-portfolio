@@ -9,7 +9,7 @@ angular.
         var self = this;
         self.orderProp = '-startdate';
 
-        $http.get('http://localhost:8080/admin-cv/workExperience/list?lang=en').then(function(response)
+        $http.get('http://68.66.240.35/admin-cv/workExperience/list?lang=en').then(function(response)
         {
           self.workExperiences = response.data;
         });
@@ -17,13 +17,13 @@ angular.
         $rootScope.$on('$translateChangeSuccess', function () {
           if($rootScope.lang == 'en')
           {
-            $http.get('http://localhost:8080/admin-cv/workExperience/list?lang=en').then(function(response){
+            $http.get('http://68.66.240.35/admin-cv/workExperience/list?lang=en').then(function(response){
               self.workExperiences = response.data;
             });
           }
           else
           {
-            $http.get('http://localhost:8080/admin-cv/workExperience/list?lang=fr').then(function(response){
+            $http.get('http://68.66.240.35/admin-cv/workExperience/list?lang=fr').then(function(response){
               self.workExperiences = response.data;
             });
           }

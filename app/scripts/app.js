@@ -21,7 +21,8 @@ angular
     'professionalSkillList',
     'userDescription',
     'interestList',
-    'pascalprecht.translate'
+    'pascalprecht.translate',
+    'personalProjectList'
   ])
   .config(function ($locationProvider, $routeProvider, $translateProvider) {
     $locationProvider.hashPrefix('!');

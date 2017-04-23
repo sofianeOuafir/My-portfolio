@@ -1,0 +1,22 @@
+<div class="projects col-md-12">
+  <div class="projects-icon col-md-2">
+    <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
+  </div>
+  <div class="projects-project col-md-10">
+    <div class="col-md-8 projects-project-title">
+      <h1><strong translate>PROJECT.TITLE</strong></h1>
+    </div>
+    <div class="col-md-4 projects-project-selectpicker">
+      <select class="selectpicker" ng-model="$ctrl.orderProp">
+        <option value="-startdate" translate>PROJECT.NEWEST</option>
+        <option value="startdate" translate>PROJECT.OLDEST</option>
+      </select>
+    </div>
+    <div class="col-md-12 projects-project-repeat list-item" ng-repeat="project in $ctrl.projects | orderBy: $ctrl.orderProp">
+        <h2><a href="{{project.website}}" target="_blank" class="link"><strong>{{project.title}}</strong></a><span class="projects-project-technology"> - {{project.technology}}</span></h2>
+      <p>
+        {{project.description}} - <a href="{{project.website}}" target="_blank" class="small-link" translate>PROJECT.MORE_INFORMATIONS</a>.
+      </p>
+    </div>
+  </div>
+</div>
