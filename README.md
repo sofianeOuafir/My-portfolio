@@ -1,8 +1,9 @@
 
   <h1>Projet de Techno - mobiles</h1>
+  <p><a href="http://68.66.240.35/">Voir le site internet</a></p>
   <p> <strong> Technologies utilisées : </strong> </p>
   <ul>
-  <li> <a href="https://github.com/sofianeOuafir/cv-admin"> <span style="color:red">Framework backend - webservice </span> : Grails </a> </li>
+  <li> <a href="https://github.com/sofianeOuafir/cv-admin"> <span>Framework backend - webservice </span> : Grails </a> </li>
   <li> <span>Framework Frontend </span> : Angular Js </li>
   <li> <span> Traduction </span> : Angular-translate </li> 
   <li> <span> Autres librairies </span> : Bootstrap, Jquery, flag-icon </li> 
