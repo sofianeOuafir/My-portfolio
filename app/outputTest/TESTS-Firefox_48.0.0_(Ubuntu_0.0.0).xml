@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
-<testsuite name="Firefox 48.0.0 (Ubuntu 0.0.0)" package="" timestamp="2017-04-25T19:08:33" id="0" hostname="sofiane-UX303UB" tests="10" errors="0" failures="0" time="0.116">
+<testsuite name="Firefox 48.0.0 (Ubuntu 0.0.0)" package="" timestamp="2017-05-02T20:31:46" id="0" hostname="sofiane-UX303UB" tests="10" errors="0" failures="0" time="0.102">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0"/>
   </properties>
-  <testcase name="educationList educationList should set a default value for the orderProp property" time="0.032" classname="Firefox_48_0_0_(Ubuntu_0_0_0).educationList"/>
-  <testcase name="educationList educationList should create a `educationList` property with 3 educations fetched with `$http`" time="0.02" classname="Firefox_48_0_0_(Ubuntu_0_0_0).educationList"/>
-  <testcase name="interestList interestListController should create a interests property with 1 interest" time="0.01" classname="Firefox_48_0_0_(Ubuntu_0_0_0).interestList"/>
+  <testcase name="educationList educationList should set a default value for the orderProp property" time="0.024" classname="Firefox_48_0_0_(Ubuntu_0_0_0).educationList"/>
+  <testcase name="educationList educationList should create a `educationList` property with 3 educations fetched with `$http`" time="0.012" classname="Firefox_48_0_0_(Ubuntu_0_0_0).educationList"/>
+  <testcase name="interestList interestListController should create a interests property with 1 interest" time="0.007" classname="Firefox_48_0_0_(Ubuntu_0_0_0).interestList"/>
   <testcase name="personalProjectList Controller should create a projects property with 1 project" time="0.008" classname="Firefox_48_0_0_(Ubuntu_0_0_0).personalProjectList"/>
-  <testcase name="professionalSkillList controller should create a professionalSkills property with 2 items" time="0.008" classname="Firefox_48_0_0_(Ubuntu_0_0_0).professionalSkillList"/>
-  <testcase name="professionalSkillList controller color function should return the right value" time="0.006" classname="Firefox_48_0_0_(Ubuntu_0_0_0).professionalSkillList"/>
+  <testcase name="professionalSkillList controller should create a professionalSkills property with 2 items" time="0.006" classname="Firefox_48_0_0_(Ubuntu_0_0_0).professionalSkillList"/>
+  <testcase name="professionalSkillList controller color function should return the right value" time="0.009" classname="Firefox_48_0_0_(Ubuntu_0_0_0).professionalSkillList"/>
   <testcase name="professionalSkillList controller orderProp property should be -achievment" time="0.005" classname="Firefox_48_0_0_(Ubuntu_0_0_0).professionalSkillList"/>
-  <testcase name="userDescription controller should create a user property named Sofiane" time="0.008" classname="Firefox_48_0_0_(Ubuntu_0_0_0).userDescription"/>
+  <testcase name="userDescription controller should create a user property named Sofiane" time="0.01" classname="Firefox_48_0_0_(Ubuntu_0_0_0).userDescription"/>
   <testcase name="workExperienceList workExperienceList should set a default value for the `orderProp` property" time="0.006" classname="Firefox_48_0_0_(Ubuntu_0_0_0).workExperienceList"/>
-  <testcase name="workExperienceList workExperienceList should create a `workExperiences` property with 2 work experiences fetched with `$http`" time="0.013" classname="Firefox_48_0_0_(Ubuntu_0_0_0).workExperienceList"/>
+  <testcase name="workExperienceList workExperienceList should create a `workExperiences` property with 2 work experiences fetched with `$http`" time="0.015" classname="Firefox_48_0_0_(Ubuntu_0_0_0).workExperienceList"/>
   <system-out>
     <![CDATA[
 ]]>
