@@ -1,6 +1,6 @@
 
   <h1>My portfolio</h1>
-  <p><a href="www.sofianeo.com/">Have a look at the website</a></p>
+  <p><a href="www.sofianeo.com">Have a look at the website</a></p>
   <h2>Libraries and components:</h2>
   <ul>
   <li> <a href="https://github.com/sofianeOuafir/cv-admin"> <span>Backend framework - webservice </span> : Grails </a> </li>
