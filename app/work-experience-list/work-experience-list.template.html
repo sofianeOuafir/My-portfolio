@@ -16,8 +16,11 @@
       <h2><a href="{{workExperience.website}}" target="_blank" class="link"><strong>{{workExperience.title}}</strong></a> <span class="work-experiences-experience-place"><strong>@{{workExperience.place}}</strong></span></h2>
       <p class="work-experiences-experience-date">{{workExperience.startdate | date:'MMM yyyy'}} - {{workExperience.enddate | date:'MMM yyyy'}}</p>
       <p>
-        {{workExperience.description}}
+        <em>{{workExperience.description}}</em>
       </p>
+      <ul ng-repeat="task in workExperience.tasks | orderBy:'id'">
+        <li class="task"><span class="glyphicon glyphicon-arrow-right task-icon"></span> {{task.description}}</li>
+      </ul>
     </div>
   </div>
 </div>

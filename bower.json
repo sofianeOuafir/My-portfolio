@@ -20,9 +20,7 @@
     "angular-mocks": "^1.4.0",
     "angular-translate-loader-url": "^2.15.1"
   },
-  "devDependencies": {
-
-  },
+  "devDependencies": {},
   "appPath": "app",
   "moduleName": "cvAngularApp",
   "overrides": {
@@ -33,5 +31,8 @@
         "dist/js/bootstrap.js"
       ]
     }
+  },
+  "resolutions": {
+    "angular": ">=1.2.26 <1.7"
   }
 }

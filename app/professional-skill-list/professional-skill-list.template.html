@@ -4,14 +4,10 @@
   </div>
   <p class="skills-title col-md-10"><strong translate>SKILLS.TITLE</strong></p>
   <div class="col-md-offset-2 col-md-10" ng-repeat="professionalSkill in $ctrl.professionalSkills | orderBy:$ctrl.orderProp">
-    <p class="skills-skill-title">{{professionalSkill.title}}</p>
+    <p class="skills-skill-title" ng-bind-html="$ctrl.separateTitle(professionalSkill.title)"></p>
     <div class="progress">
       <div class="progress-bar progress-bar-{{$ctrl.color(professionalSkill.achievment)}}" role="progressbar" aria-valuenow="{{professionalSkill.achievment}}" aria-valuemin="0" aria-valuemax="100" style="width: {{professionalSkill.achievment}}%;">
       </div>
     </div>
   </div>
 </div>
-
-<!-- <script>
-  $('#hidden').hide();
-</script>-->

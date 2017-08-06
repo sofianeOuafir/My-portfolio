@@ -25,6 +25,16 @@ angular.
           }
         }
 
+        self.separateTitle = function(title)
+        {
+          var array = title.split(':');
+          var firstPart = array[0];
+          var secondPart = array[1];
+          return '<span class="skills-title-firstPart"><strong>' + firstPart + ':</strong></span>' + secondPart;
+        }
+
+
+
         $http.get('http://68.66.240.35/admin-cv/professionalSkill/list?lang=en').then(function(response){
           self.professionalSkills = response.data;
         });

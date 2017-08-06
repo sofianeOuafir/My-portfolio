@@ -35,7 +35,10 @@ body
   margin-top:5px;
   text-align:center;
 }
-
+.user-job-description
+{
+    font-size:20px;
+}
 .user-description-icon, .user-description-text, .user-phone-icon, .user-phone-number, .user-email-icon, .user-email-address, .user-github-icon, .user-github-address
 {
   display:inline-block;
@@ -205,4 +208,20 @@ padding:0px
 .flag-icon-gb
 {
   margin-right:5px;
+}
+
+.skills-title-firstPart
+{
+  color:#ffa64d;
+}
+
+.task-icon
+{
+color:#5da4d9;
+}
+
+.task
+{
+  list-style-type:none;
+  margin-left:-40px;
 }

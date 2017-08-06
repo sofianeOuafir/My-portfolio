@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('professionalSkillList', ['pascalprecht.translate'])
+angular.module('professionalSkillList', ['pascalprecht.translate', 'ngSanitize'])
        .config(function($translateProvider){
 
         var en = {
